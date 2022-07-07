@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-sidebar-toggler",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Finer control of the Obsidian sidebars. To be used with an external window manager.",
 	"main": "main.js",
 	"scripts": {
