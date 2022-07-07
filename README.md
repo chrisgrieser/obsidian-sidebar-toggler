@@ -11,10 +11,22 @@ It adds commands four commands for toggling the sidebar. As opposed to Obsidian'
 - Show left sidebar
 - Show right sidebar
 
-In addition, the plugin registers four URI schemes for these commands. These allows you to easily integrate the sidebar commands with your window manager, e.g. hiding the sidebar for certain types of splits.
+In addition, the plugin registers four URI schemes for those commands:
+
+```text
+obsidian://sidebar?side=left&show=false
+obsidian://sidebar?side=right&show=false
+obsidian://sidebar?side=left&show=true
+obsidian://sidebar?side=right&show=true
+```
+
+## Purpose of the plugin
+The main use for this plugin is to provide a simple and clear method for window management apps to control Obsidian's sidebars. Just add something like `open "obsidian://sidebar?side=left&show=false"` to your window management configuration to have your window manager control Obsidian's sidebars. 
+
+I, for example, have configured to hide Obsidian's sidebars when I trigger a vertical split of my windows. When I maximize my Obsidian window, the sidebars get automatically shown again.
 
 ## Similar plugins
-[Hide Sidebars when Narrow](https://obsidian.md/plugins?id=obsidian-hide-sidebars-when-narrow) works automatically based on certain pixel widths, which might be a better fit for people with certain workflows.
+[Hide Sidebars when Narrow](https://obsidian.md/plugins?id=obsidian-hide-sidebars-when-narrow) shows/hides the sidebars automatically based on configurable pixel widths.
 
 ## Installation
 Right now, the plugin is still in beta. It can be installed with the [BRAT Plugin](https://github.com/TfTHacker/obsidian42-brat).
