@@ -25,6 +25,21 @@ The main use for this plugin is to provide a simple and clear method for __windo
 
 I, for example, have configured to hide Obsidian's sidebars when I trigger a vertical split of my windows. When I maximize my Obsidian window, the sidebars get automatically shown again.
 
+For the mac Automation app [Hammerspoon](http://www.hammerspoon.org/), for example, such a function to be used would look like this:
+
+```lua
+function toggleObsidianSidebar (obsiWin)
+  -- requires Obsidian Sidebar Toggler Plugin https://github.com/chrisgrieser/obsidian-sidebar-toggler
+  local obsi_width = obsiWin:frame().w
+  local screen_width = obsiWin:screen():frame().w
+  if (obsi_width / screen_width > 0.6) then
+  	hs.urlevent.openURL("obsidian://sidebar?side=left&show=false")
+  else
+  	hs.urlevent.openURL("obsidian://sidebar?side=left&show=true")
+  end
+end
+```
+
 ## Similar plugins
 [Hide Sidebars when Narrow](https://obsidian.md/plugins?id=obsidian-hide-sidebars-when-narrow) shows/hides the sidebars automatically based on configurable pixel widths.
 
