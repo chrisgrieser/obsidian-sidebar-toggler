@@ -29,13 +29,12 @@ For the mac Automation app [Hammerspoon](http://www.hammerspoon.org/), for examp
 
 ```lua
 function toggleObsidianSidebar (obsiWin)
-  -- requires Obsidian Sidebar Toggler Plugin https://github.com/chrisgrieser/obsidian-sidebar-toggler
   local obsi_width = obsiWin:frame().w
   local screen_width = obsiWin:screen():frame().w
   if (obsi_width / screen_width > 0.6) then
-  	hs.urlevent.openURL("obsidian://sidebar?side=left&show=false")
-  else
   	hs.urlevent.openURL("obsidian://sidebar?side=left&show=true")
+  else
+  	hs.urlevent.openURL("obsidian://sidebar?side=left&show=false")
   end
 end
 ```
