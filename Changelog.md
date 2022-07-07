@@ -1,3 +1,4 @@
+- 2022-07-07	release 0.3.1
 - 2022-07-07	release 0.3.0
 - 2022-07-07	URI schemes working
 - 2022-07-07	release 0.2.0
