@@ -25,7 +25,7 @@ The main use for this plugin is to provide a simple and clear method for __windo
 
 I, for example, have configured to hide Obsidian's sidebars when I trigger a vertical split of my windows. When I maximize my Obsidian window, the sidebars get automatically shown again.
 
-For the mac Automation app [Hammerspoon](http://www.hammerspoon.org/), for example, such a function to be used would look like this:
+For the macOS Automation app [Hammerspoon](http://www.hammerspoon.org/), for example, such a function could look like this:
 
 ```lua
 function toggleObsidianSidebar (obsiWin)
