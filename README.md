@@ -1,6 +1,6 @@
 # Sidebar Toggler
 
-<!-- ![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-sidebar-toggler/total?label=Total%20Downloads&style=plastic) ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-sidebar-toggler?label=Latest%20Release&style=plastic) [![](https://img.shields.io/badge/changelog-click%20here-FFE800?style=plastic)](Changelog.md) -->
+![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-sidebar-toggler/total?label=Total%20Downloads&style=plastic) ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-sidebar-toggler?label=Latest%20Release&style=plastic) [![](https://img.shields.io/badge/changelog-click%20here-FFE800?style=plastic)](Changelog.md)
 
 Finer control of the Obsidian sidebars. To be used with an external window manager.
 
