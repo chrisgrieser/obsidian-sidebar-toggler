@@ -34,9 +34,11 @@ export default class SidebarToggler extends Plugin {
 		this.registerObsidianProtocolHandler("sidebar", async (p) => {
 			// 🏴‍☠️ ryan's log plugin
 			const parameters = p as unknown as UriParameters;
-			for (const parameter in parameters) 
-				parameters as any[parameter] = parameters as any[parameter];
-			
+			// eslint-disable-next-line curly
+			for (const parameter in parameters) {
+				// eslint-disable-next-line @typescript-eslint/no-explicit-any, no-extra-parens
+				(parameters as any)[parameter] = (parameters as any)[parameter];
+			}
 
 			const sideParamValid = ["right", "left"].includes(parameters.side);
 			const showParamValid = ["true", "false"].includes(parameters.show);
