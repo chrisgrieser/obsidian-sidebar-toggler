@@ -1,8 +1,8 @@
-Replace throughout the repo: 
-{{plugin-name}}
-{{plugin-id}}
-{{plugin-desc}}
-{{plugin-class}}
+Replace throughout the repo:
+Sidebar Toggler
+obsidian-sidebar-toggler
+Finer control of the Obsidian sidebars. To be used with an external window manager.
+SidebarToggler
 
 ---
 
@@ -14,9 +14,9 @@ to copypaste into the obsidian releases json:
 
     },
     {
-        "id": "{{plugin-id}}",
-        "name": "{{plugin-name}}",
+        "id": "obsidian-sidebar-toggler",
+        "name": "Sidebar Toggler",
         "author": "pseudometa",
-        "description": "{{plugin-desc}}",
-        "repo": "chrisgrieser/{{plugin-id}}"
+        "description": "Finer control of the Obsidian sidebars. To be used with an external window manager.",
+        "repo": "chrisgrieser/obsidian-sidebar-toggler"
     }

@@ -1,24 +1,25 @@
-# {{plugin-name}}
+# Sidebar Toggler
 
-<!-- ![](https://img.shields.io/github/downloads/chrisgrieser/{{plugin-id}}/total?label=Total%20Downloads&style=plastic) ![](https://img.shields.io/github/v/release/chrisgrieser/{{plugin-id}}?label=Latest%20Release&style=plastic) [![](https://img.shields.io/badge/changelog-click%20here-FFE800?style=plastic)](Changelog.md) -->
+<!-- ![](https://img.shields.io/github/downloads/chrisgrieser/obsidian-sidebar-toggler/total?label=Total%20Downloads&style=plastic) ![](https://img.shields.io/github/v/release/chrisgrieser/obsidian-sidebar-toggler?label=Latest%20Release&style=plastic) [![](https://img.shields.io/badge/changelog-click%20here-FFE800?style=plastic)](Changelog.md) -->
 
-{{plugin-desc}}
+Finer control of the Obsidian sidebars. To be used with an external window manager.
 
-## Table of Contents
-<!-- MarkdownTOC -->
+## What the plugin does
+It adds commands four commands for toggling the sidebar. As opposed to Obsidian's native commands, which only allow *toggling* of the sidebars, you can explicitly determine whether to show or hide them.
+- Hide left sidebar
+- Hide right sidebar
+- Show left sidebar
+- Show right sidebar
 
-- [Installation](#installation)
-- [Contribute](#contribute)
-- [About the Developer](#about-the-developer)
-	- [Profiles](#profiles)
-	- [Donate](#donate)
+In addition, the plugin registers four URI schemes for these commands. These allows you to easily integrate the sidebar commands with your window manager, e.g. hiding the sidebar for certain types of splits.
 
-<!-- /MarkdownTOC -->
+## Similar plugins
+[Hide Sidebars when Narrow](https://obsidian.md/plugins?id=obsidian-hide-sidebars-when-narrow) works automatically based on certain pixel widths, which might be a better fit for people with certain workflows.
 
 ## Installation
 Right now, the plugin is still in beta. It can be installed with the [BRAT Plugin](https://github.com/TfTHacker/obsidian42-brat).
 
-When published, it will be available in Obsidian's Community Plugin Browser via: `Settings` → `Community Plugins` → `Browse` → Search for *"{{plugin-name}}"*
+When published, it will be available in Obsidian's Community Plugin Browser via: `Settings` → `Community Plugins` → `Browse` → Search for *"Sidebar Toggler"*
 
 ## Contribute
 Please use the [`.eslintrc` configuration located in the repository](.eslintrc) and run eslint before doing a pull request, and please do *not* use `prettier`. 🙂
