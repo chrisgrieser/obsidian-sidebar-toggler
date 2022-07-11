@@ -5,7 +5,7 @@
 Finer control of the Obsidian sidebars. To be used with an external window manager.
 
 ## What the plugin does
-It adds commands four commands for toggling the sidebar. As opposed to Obsidian's native commands, which only allow *toggling* of the sidebars, you can explicitly determine whether to show or hide them.
+It adds four commands for toggling the sidebar. As opposed to Obsidian's native commands, which only allow *toggling* of the sidebars, you can explicitly determine whether to show or hide them.
 - Hide left sidebar
 - Hide right sidebar
 - Show left sidebar
@@ -23,7 +23,7 @@ obsidian://sidebar?side=right&show=true
 ## Purpose of this plugin
 The main use for this plugin is to provide a simple and clear method for __window management apps__ to control Obsidian's sidebars. Just add something like `open "obsidian://sidebar?side=left&show=false"` to your window management configuration to have your window manager control Obsidian's sidebars. 
 
-I, for example, have configured to hide Obsidian's sidebars when I trigger a vertical split of my windows. When I maximize my Obsidian window, the sidebars get automatically shown again.
+I, for example, have configured to hide Obsidian's sidebars when I trigger a vertical split of my windows. When I maximize my Obsidian window, the sidebars are shown again.
 
 For the macOS Automation app [Hammerspoon](http://www.hammerspoon.org/), for example, such a function could look like this:
 
