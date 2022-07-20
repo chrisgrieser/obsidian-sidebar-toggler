@@ -1,3 +1,6 @@
+- 2022-07-20	release 0.4.0
+- 2022-07-20	URI schema now combines showing & side
+- 2022-07-07	added explanations to readme
 - 2022-07-07	release 0.3.1
 - 2022-07-07	release 0.3.0
 - 2022-07-07	URI schemes working
