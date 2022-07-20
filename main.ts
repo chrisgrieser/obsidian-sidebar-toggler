@@ -1,8 +1,8 @@
 import { Notice, Plugin } from "obsidian";
 
 interface UriParameters {
-	side?: string;
-	show?: string;
+	showLeft?: string;
+	showRight?: string;
 }
 
 export default class SidebarToggler extends Plugin {
@@ -40,17 +40,17 @@ export default class SidebarToggler extends Plugin {
 				(parameters as any)[parameter] = (parameters as any)[parameter];
 			}
 
-			const sideParamValid = ["right", "left"].includes(parameters.side);
-			const showParamValid = ["true", "false"].includes(parameters.show);
-			if (!sideParamValid || !showParamValid) {
+			const leftParamValid = ["true", "false"].includes(parameters.showLeft);
+			const rightParamValid = ["true", "false"].includes(parameters.showRight);
+			if (!leftParamValid && !rightParamValid) {
 				new Notice ("URI invalid.\n\nPlease refer to the README of the Sidebar Toggler Plugin.");
 				return;
 			}
 
-			const show = parameters.show === "true";
-			this.showSidebar(parameters.side, show);
-			console.log("Side: " + parameters.side);
-			console.log("Show: " + show);
+			if (parameters.showLeft === "true") this.showSidebar("left", true);
+			else if (parameters.showLeft === "false") this.showSidebar("left", false);
+			if (parameters.showRight === "true") this.showSidebar("right", true);
+			else if (parameters.showRight === "false") this.showSidebar("right", false);
 		});
 
 	}
