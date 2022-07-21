@@ -11,13 +11,14 @@ It adds four commands for toggling the sidebar. As opposed to Obsidian's native 
 - Show left sidebar
 - Show right sidebar
 
-In addition, the plugin registers four URI schemes for those commands:
+In addition, the plugin registers a URI schemes for those commands. The URI must include `showLeft` or `showRight`, and both accept only `true` and `false` as valid input. You can also include both to affect both sidebars with one URI.
 
 ```text
-obsidian://sidebar?side=left&show=false
-obsidian://sidebar?side=right&show=false
-obsidian://sidebar?side=left&show=true
-obsidian://sidebar?side=right&show=true
+# Hide left sidebar (and do nothing to the ride sidebar)
+obsidian://sidebar?showLeft=true
+
+# Show left and hide right sidebar
+obsidian://sidebar?showLeft=true&showRight=false
 ```
 
 ## Purpose of this plugin
@@ -32,9 +33,9 @@ function toggleObsidianSidebar (obsiWin)
   local obsi_width = obsiWin:frame().w
   local screen_width = obsiWin:screen():frame().w
   if (obsi_width / screen_width > 0.6) then
-  	hs.urlevent.openURL("obsidian://sidebar?side=left&show=true")
+  	hs.urlevent.openURL("obsidian://sidebar?showLeft=true&showRight=false")
   else
-  	hs.urlevent.openURL("obsidian://sidebar?side=left&show=false")
+  	hs.urlevent.openURL("obsidian://sidebar?showLeft=false&showRight=false")
   end
 end
 ```
