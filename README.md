@@ -14,7 +14,7 @@ It adds four commands for toggling the sidebar. As opposed to Obsidian's native 
 In addition, the plugin registers a URI schemes for those commands. The URI must include `showLeft` or `showRight`, and both accept only `true` and `false` as valid input. You can also include both to affect both sidebars with one URI.
 
 ```text
-# Hide left sidebar (and do nothing to the ride sidebar)
+# Show left sidebar (and do nothing to the ride sidebar)
 obsidian://sidebar?showLeft=true
 
 # Show left and hide right sidebar
