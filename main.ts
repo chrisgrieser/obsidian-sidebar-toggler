@@ -58,8 +58,8 @@ export default class SidebarToggler extends Plugin {
 
 	toggleSidebar(side: string, show: boolean) {
 		if (side === "left" && show) this.app.workspace.leftSplit.expand();
-		else if (side === "right" && show ) this.app.workspace.rightSplit.expand();
-		else if (side === "left" && !show ) this.app.workspace.leftSplit.collapse();
+		else if (side === "right" && show) this.app.workspace.rightSplit.expand();
+		else if (side === "left" && !show) this.app.workspace.leftSplit.collapse();
 		else if (side === "right" && !show) this.app.workspace.rightSplit.collapse();
 	}
 }
