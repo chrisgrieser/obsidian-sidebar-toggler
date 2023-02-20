@@ -4,6 +4,23 @@
 
 Finer control of the Obsidian sidebars. To be used with an external window manager.
 
+
+---
+
+> __Note__  
+> This plugin has been archived, since the same functionality can now be achieved by the [Advanced URI plugin](https://obsidian.md/plugins?id=obsidian-advanced-uri) in a much more efficient manner using it's new `eval` URI scheme:
+
+```text
+# show left sidebar
+obsidian://advanced-uri?eval=this.app.workspace.leftSplit.expand%28%29
+
+# hide right sidebar
+obsidian://advanced-uri?eval=this.app.workspace.rightSplit.collapse%28%29
+```
+
+---
+
+
 <!--toc:start-->
 - [What the plugin does](#what-the-plugin-does)
 - [Purpose of this plugin](#purpose-of-this-plugin)
