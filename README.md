@@ -4,7 +4,14 @@
 
 Finer control of the Obsidian sidebars. To be used with an external window manager.
 
-
+<!--toc:start-->
+- [What the plugin does](#what-the-plugin-does)
+- [Purpose of this plugin](#purpose-of-this-plugin)
+- [Similar plugins](#similar-plugins)
+- [Installation](#installation)
+- [Contribute](#contribute)
+- [About the developer](#about-the-developer)
+<!--toc:end-->
 
 ## What the plugin does
 It adds four commands for toggling the sidebar. As opposed to Obsidian's native commands, which only allow *toggling* of the sidebars, you can explicitly determine whether to show or hide them.
