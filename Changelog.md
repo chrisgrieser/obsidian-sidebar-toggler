@@ -1,3 +1,8 @@
+- 2023-02-20	release 0.4.1
+- 2023-02-20	chore
+- 2023-02-20	fix: right sidebar not toggling when left hidden
+- 2023-02-20	docs: update
+- 2022-07-21	update readme for new URI
 - 2022-07-20	release 0.4.0
 - 2022-07-20	URI schema now combines showing & side
 - 2022-07-07	added explanations to readme

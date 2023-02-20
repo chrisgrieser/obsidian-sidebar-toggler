@@ -14,7 +14,9 @@ Finer control of the Obsidian sidebars. To be used with an external window manag
 <!--toc:end-->
 
 ## What the plugin does
+
 It adds four commands for toggling the sidebar. As opposed to Obsidian's native commands, which only allow *toggling* of the sidebars, you can explicitly determine whether to show or hide them.
+
 - Hide left sidebar
 - Hide right sidebar
 - Show left sidebar
@@ -31,6 +33,7 @@ obsidian://sidebar?showLeft=true&showRight=false
 ```
 
 ## Purpose of this plugin
+
 The main use for this plugin is to provide a simple and clear method for __window management apps__ to control Obsidian's sidebars. Just add something like `open "obsidian://sidebar?side=left&show=false"` to your window management configuration to have your window manager control Obsidian's sidebars.
 
 I, for example, have configured to hide Obsidian's sidebars when I trigger a vertical split of my windows. When I maximize my Obsidian window, the sidebars are shown again.
@@ -42,20 +45,23 @@ function toggleObsidianSidebar (obsiWin)
   local obsi_width = obsiWin:frame().w
   local screen_width = obsiWin:screen():frame().w
   if (obsi_width / screen_width > 0.6) then
-  	hs.urlevent.openURL("obsidian://sidebar?showLeft=true&showRight=false")
+   hs.urlevent.openURL("obsidian://sidebar?showLeft=true&showRight=false")
   else
-  	hs.urlevent.openURL("obsidian://sidebar?showLeft=false&showRight=false")
+   hs.urlevent.openURL("obsidian://sidebar?showLeft=false&showRight=false")
   end
 end
 ```
 
 ## Similar plugins
+
 [Hide Sidebars when Narrow](https://obsidian.md/plugins?id=obsidian-hide-sidebars-when-narrow) shows/hides the sidebars automatically based on configurable pixel widths.
 
 ## Installation
+
 Available in Obsidian's Community Plugin Browser via: `Settings` → `Community Plugins` → `Browse` → Search for *"Sidebar Toggler"*
 
 ## Contribute
+
 Please use the [`.eslintrc` configuration located in the repository](.eslintrc) and run eslint before doing a pull request.
 
 ```shell
@@ -65,9 +71,11 @@ eslint --fix *.ts
 
 <!-- vale Google.FirstPerson = NO --> <!-- vale Microsoft.FirstPerson = NO -->
 ## About the developer
+
 In my day job, I am a sociologist studying the social mechanisms underlying the digital economy. For my PhD project, I investigate the governance of the app economy and how software ecosystems manage the tension between innovation and compatibility. If you are interested in this subject, feel free to get in touch!
 
 __Profiles__  
+
 - [Academic Website](https://chris-grieser.de/)
 - [ResearchGate](https://www.researchgate.net/profile/Christopher-Grieser)
 - [Discord](https://discordapp.com/users/462774483044794368/)
