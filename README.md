@@ -8,7 +8,7 @@ Finer control of the Obsidian sidebars. To be used with an external window manag
 ---
 
 > __Note__  
-> This plugin has been archived, since the same functionality can now be achieved by the [Advanced URI plugin](https://obsidian.md/plugins?id=obsidian-advanced-uri) in a much more efficient manner using it's new `eval` URI scheme:
+> This plugin has been archived, since the same functionality can now be achieved by the [Advanced URI plugin](https://obsidian.md/plugins?id=obsidian-advanced-uri) in a much more efficient and customizable manner using it's new `eval` URI scheme:
 
 ```text
 # show left sidebar
